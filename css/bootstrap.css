@@ -79,7 +79,7 @@
         display: none
     }
     .badge {
-        border: 1px solid #000
+        border: 1px solid #4b2998
     }
     .table {
         border-collapse: collapse!important
@@ -5191,14 +5191,14 @@ button.list-group-item-dark.active {
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 1;
-    color: #000;
+    color: #4b2998;
     text-shadow: 0 1px 0 #fff;
     opacity: .5
 }
 
 .close:focus,
 .close:hover {
-    color: #000;
+    color: #4b2998;
     text-decoration: none;
     opacity: .75
 }
@@ -5272,7 +5272,7 @@ button.close {
     bottom: 0;
     left: 0;
     z-index: 1040;
-    background-color: #000
+    background-color: #4b2998
 }
 
 .modal-backdrop.fade {
@@ -5412,7 +5412,7 @@ button.close {
     margin-left: -3px;
     content: "";
     border-width: 5px 5px 0;
-    border-top-color: #000
+    border-top-color: #4b2998
 }
 
 .tooltip.bs-tooltip-auto[x-placement^=right],
@@ -5430,7 +5430,7 @@ button.close {
     margin-top: -3px;
     content: "";
     border-width: 5px 5px 5px 0;
-    border-right-color: #000
+    border-right-color: #4b2998
 }
 
 .tooltip.bs-tooltip-auto[x-placement^=bottom],
@@ -5448,7 +5448,7 @@ button.close {
     margin-left: -3px;
     content: "";
     border-width: 0 5px 5px;
-    border-bottom-color: #000
+    border-bottom-color: #4b2998
 }
 
 .tooltip.bs-tooltip-auto[x-placement^=left],
@@ -5467,7 +5467,7 @@ button.close {
     margin-top: -3px;
     content: "";
     border-width: 5px 0 5px 5px;
-    border-left-color: #000
+    border-left-color: #4b2998
 }
 
 .tooltip-inner {
@@ -5475,7 +5475,7 @@ button.close {
     padding: 3px 8px;
     color: #fff;
     text-align: center;
-    background-color: #000;
+    background-color: #4b2998;
     border-radius: .25rem
 }
 
