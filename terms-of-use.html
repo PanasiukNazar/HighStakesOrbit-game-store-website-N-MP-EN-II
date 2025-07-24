@@ -54,6 +54,231 @@
         <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="css/responsive.css" />
+        <!-- Custom Styles -->
+        <!-- Unique Styles -->
+        <style>
+            .unique-header {
+                background: #0f1117;
+                color: #fff;
+                padding: 1rem 0;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+                font-family: "Orbitron", sans-serif;
+            }
+
+            .header-grid {
+                display: grid;
+                grid-template-columns: 1fr 3fr 1fr;
+                align-items: center;
+                max-width: 1200px;
+                margin: 0 auto;
+                gap: 1rem;
+            }
+
+            .logo-section {
+                text-align: center;
+            }
+
+            .logo-text {
+                font-size: 1.7rem;
+                text-transform: uppercase;
+                color: #00ffae;
+                text-decoration: none;
+                letter-spacing: 2px;
+            }
+
+            .nav-section {
+                text-align: center;
+            }
+
+            .nav-list {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .nav-list li a,
+            .nav-list li i {
+                font-size: 1.3rem;
+                color: #ffffff;
+                text-decoration: none;
+                transition: color 0.3s ease;
+            }
+
+            .nav-list li a:hover,
+            .nav-list li i:hover {
+                color: #00ffae;
+            }
+
+            .shop-dropdown {
+                position: relative;
+                cursor: pointer;
+            }
+
+            .dropdown-inner {
+                display: none;
+                position: absolute;
+                top: 90%;
+                left: -35px;
+                background: #1b1d24;
+                list-style: none;
+                padding: 0.5rem 0;
+                border-radius: 4px;
+                min-width: 120px;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+                z-index: 999;
+            }
+
+            .dropdown-inner li a {
+                display: block;
+                padding: 0.5rem 1rem;
+                color: #fff;
+                font-size: 0.9rem;
+                text-decoration: none;
+                transition: background 0.2s ease;
+            }
+
+            .dropdown-inner li a:hover {
+                background: #00ffae;
+                color: #000;
+            }
+
+            .shop-dropdown:hover .dropdown-inner {
+                display: block;
+            }
+
+            .action-section {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1.2rem;
+            }
+
+            .icon-link {
+                position: relative;
+                font-size: 1.4rem;
+                color: #fff;
+                text-decoration: none;
+            }
+
+            .icon-link:hover {
+                color: #00ffae;
+            }
+
+            .badge {
+                position: absolute;
+                top: -8px;
+                right: -10px;
+                background: #ff4444;
+                color: white;
+                font-size: 0.7rem;
+                padding: 2px 5px;
+                border-radius: 50%;
+            }
+
+            @media (max-width: 768px) {
+                .header-grid {
+                    grid-template-columns: 1fr;
+                    text-align: center;
+                    gap: 0.5rem;
+                }
+
+                .nav-list {
+                    flex-wrap: wrap;
+                    gap: 1rem;
+                }
+            }
+            .unique-footer {
+                background-color: #0f1117;
+                color: #ccc;
+                padding: 3rem 1rem;
+                font-family: "Orbitron", sans-serif;
+                box-shadow: inset 0 10px 30px -15px #000000;
+            }
+
+            .footer-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 2.5rem;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            .footer-section h3 {
+                font-size: 1.6rem;
+                color: #00ffae;
+                margin-bottom: 1rem;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+
+            .footer-section p {
+                font-size: 1rem;
+                line-height: 1.6;
+                color: #bbb;
+            }
+
+            .quick-links ul,
+            .help-contact .contact-list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .quick-links ul li {
+                margin-bottom: 0.8rem;
+            }
+
+            .quick-links ul li a {
+                color: #ccc;
+                text-decoration: none;
+                font-size: 1rem;
+                transition: color 0.3s ease;
+            }
+
+            .quick-links ul li a:hover {
+                color: #00ffae;
+            }
+
+            .help-contact .contact-list li {
+                display: flex;
+                align-items: center;
+                margin-bottom: 1rem;
+                font-size: 1rem;
+                color: #bbb;
+            }
+
+            .help-contact .contact-list li i {
+                color: #00ffae;
+                margin-right: 0.8rem;
+                font-size: 1.2rem;
+                min-width: 20px;
+                text-align: center;
+            }
+
+            .help-contact .contact-list li a {
+                color: #ccc;
+                text-decoration: none;
+                transition: color 0.3s ease;
+            }
+
+            .help-contact .contact-list li a:hover {
+                color: #00ffae;
+            }
+
+            @media (max-width: 600px) {
+                .footer-grid {
+                    grid-template-columns: 1fr;
+                    text-align: center;
+                }
+                .help-contact .contact-list li {
+                    justify-content: center;
+                }
+            }
+        </style>
     </head>
     <body class="js">
         <!-- Preloader -->
@@ -67,130 +292,67 @@
         </div>
         <!-- End Preloader -->
 
-        <!-- Header -->
-        <header class="header shop">
-            <div class="middle-inner">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-5 col-md-5 col-12">
-                            <!-- Logo -->
-                            <div class="logo">
-                                <a href="index.html"
-                                    ><h2>Entertainment’s Labs</h2></a
-                                >
-                            </div>
-                            <!--/ End Logo -->
+        <!-- Unique Game Header -->
+        <header class="unique-header">
+            <div class="header-grid">
+                <!-- Left: Logo vertically centered -->
+                <div class="logo-section">
+                    <a href="index.html" class="logo-text">OrbitX</a>
+                </div>
 
-                            <div class="mobile-nav"></div>
-                        </div>
+                <!-- Center: Navigation -->
+                <nav class="nav-section">
+                    <ul class="nav-list">
+                        <li>
+                            <a href="index.html" title="Home"
+                                ><i class="fa fa-home"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a href="about.html" title="About"
+                                ><i class="fa fa-info-circle"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a href="product-details.html" title="Games"
+                                ><i class="fa fa-gamepad"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a href="contact.html" title="Contact"
+                                ><i class="fa fa-envelope"></i
+                            ></a>
+                        </li>
+                        <li class="shop-dropdown">
+                            <i class="fa fa-bars"></i>
+                            <ul class="dropdown-inner">
+                                <li><a href="cart.html">Cart</a></li>
+                                <li><a href="checkout.html">Checkout</a></li>
+                                <li><a href="favorite.html">Favorites</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
 
-                        <div class="col-lg-7 col-md-7 col-12">
-                            <div class="right-bar">
-                                <!-- Search Form -->
-                                <div class="sinlge-bar">
-                                    <a href="favorite.html" class="single-icon">
-                                        <i
-                                            class="fa fa-heart-o"
-                                            aria-hidden="true"
-                                        ></i>
-                                        <span
-                                            data-store-el="favoriteProductsCounter"
-                                            class="total-count"
-                                        ></span>
-                                    </a>
-                                </div>
-                                <div class="sinlge-bar shopping">
-                                    <a href="cart.html" class="single-icon">
-                                        <i class="ti-bag"></i>
-                                        <span
-                                            class="total-count"
-                                            data-store-el="cartItemsCounter"
-                                        ></span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <!-- Right: Cart and Favorites -->
+                <div class="action-section">
+                    <a href="favorite.html" class="icon-link">
+                        <i class="fa fa-heart"></i>
+                        <span
+                            class="badge"
+                            data-store-el="favoriteProductsCounter"
+                        ></span>
+                    </a>
+                    <a href="cart.html" class="icon-link">
+                        <i class="ti-shopping-cart"></i>
+                        <span
+                            class="badge"
+                            data-store-el="cartItemsCounter"
+                        ></span>
+                    </a>
                 </div>
             </div>
-
-            <!-- Header Inner -->
-            <div class="header-inner">
-                <div class="container">
-                    <div class="cat-nav-head">
-                        <div class="row">
-                            <div class="col-lg-12 col-12">
-                                <div class="menu-area">
-                                    <!-- Main Menu -->
-                                    <nav class="navbar navbar-expand-lg">
-                                        <div class="navbar-collapse">
-                                            <div class="nav-inner">
-                                                <ul
-                                                    class="nav main-menu menu navbar-nav"
-                                                >
-                                                    <li class="active">
-                                                        <a href="index.html"
-                                                            >Home</a
-                                                        >
-                                                    </li>
-                                                    <li>
-                                                        <a href="about.html"
-                                                            >About Us</a
-                                                        >
-                                                    </li>
-                                                    <li>
-                                                        <a
-                                                            href="product-details.html"
-                                                            >Store</a
-                                                        >
-                                                    </li>
-                                                    <li>
-                                                        <a href="contact.html"
-                                                            >Contact</a
-                                                        >
-                                                    </li>
-                                                    <li>
-                                                        <a
-                                                            style="
-                                                                cursor: pointer;
-                                                            "
-                                                            >Shop</a
-                                                        >
-                                                        <ul class="dropdown">
-                                                            <li>
-                                                                <a
-                                                                    href="cart.html"
-                                                                    >Cart</a
-                                                                >
-                                                            </li>
-                                                            <li>
-                                                                <a
-                                                                    href="checkout.html"
-                                                                    >Checkout</a
-                                                                >
-                                                            </li>
-                                                            <li>
-                                                                <a
-                                                                    href="favorite.html"
-                                                                    >Favorites</a
-                                                                >
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </nav>
-                                    <!--/ End Main Menu -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--/ End Header Inner -->
         </header>
-        <!--/ End Header -->
 
         <main>
             <article
@@ -371,88 +533,52 @@
             </article>
         </main>
 
-        <footer class="ftco-footer ftco-bg-dark ftco-section">
-            <div class="container">
-                <div class="row mb-5">
-                    <div class="col-md">
-                        <div class="ftco-footer-widget mb-4">
-                            <h2 class="ftco-heading-2">Contact Us</h2>
-                            <p>
-                                We’re here to help you make the most of your
-                                digital gaming experience. Whether you need help
-                                finding the right game for your system or
-                                support with a recent order, our team is ready
-                                to assist.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md">
-                        <div class="ftco-footer-widget mb-4 ml-md-4">
-                            <h2 class="ftco-heading-2">Quick Links</h2>
-                            <ul class="list-unstyled">
-                                <li>
-                                    <a href="index.html" class="py-2 d-block"
-                                        >Home</a
-                                    >
-                                </li>
-                                <li>
-                                    <a href="about.html" class="py-2 d-block"
-                                        >About Us</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="privacy-policy.html"
-                                        class="py-2 d-block"
-                                        >Privacy Policy</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="cookie-policy.html"
-                                        class="py-2 d-block"
-                                        >Cookie Policy</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="terms-of-use.html"
-                                        class="py-2 d-block"
-                                        >Terms of Use</a
-                                    >
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md">
-                        <div class="ftco-footer-widget mb-4">
-                            <h2 class="ftco-heading-2">Need Help?</h2>
-                            <div class="block-23 mb-3">
-                                <ul>
-                                    <li>
-                                        <span class="text"
-                                            >38 Fossickers Way, Warrandyte VIC
-                                            3113</span
-                                        >
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                            ><span class="text"
-                                                >+61413303993</span
-                                            ></a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                            ><span class="text"
-                                                >high_stakes_orbit@gmail.com</span
-                                            ></a
-                                        >
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+        <!-- Unique Footer -->
+        <footer class="unique-footer">
+            <div class="footer-grid">
+                <!-- Contact Info -->
+                <div class="footer-section contact-info">
+                    <h3>Contact Us</h3>
+                    <p>
+                        Need assistance or game recommendations? Our team is
+                        dedicated to making your digital gaming experience
+                        smooth and enjoyable.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section quick-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li>
+                            <a href="privacy-policy.html">Privacy Policy</a>
+                        </li>
+                        <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                        <li><a href="terms-of-use.html">Terms of Use</a></li>
+                    </ul>
+                </div>
+
+                <!-- Help & Contact -->
+                <div class="footer-section help-contact">
+                    <h3>Need Help?</h3>
+                    <ul class="contact-list">
+                        <li>
+                            <i class="fa fa-map-marker"></i>
+                            <span>38 Fossickers Way, Warrandyte VIC 3113</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone"></i>
+                            <a href="tel:+61413303993">+61413303993</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope"></i>
+                            <a href="mailto:high_stakes_orbit@gmail.com"
+                                >high_stakes_orbit@gmail.com</a
+                            >
+                        </li>
+                    </ul>
                 </div>
             </div>
         </footer>
