@@ -5,7 +5,7 @@ initStore([
         description:
             'Embark on a dark fantasy journey through ancient ruins and cursed lands in this action RPG filled with secrets and peril.',
         price: 87.50,
-        image: 'images/products/elden-ring.jpg',
+        image: 'images/products/service-1.jpg',
     },
     {
         id: 2,
@@ -13,7 +13,7 @@ initStore([
         description:
             'Rule the underground with high-speed chases, tactical shootouts, and a gripping criminal storyline in this open-world thriller.',
         price: 58.90,
-        image: 'images/products/gtav.jpg',
+        image: 'images/products/service-2.jpg',
     },
     {
         id: 3,
@@ -21,7 +21,7 @@ initStore([
         description:
             'Master arcane powers and uncover ancient mysteries as a young spellcaster in a richly detailed magical world.',
         price: 96.00,
-        image: 'images/products/hogwarts-legacy.jpg',
+        image: 'images/products/service-3.jpg',
     },
     {
         id: 4,
@@ -29,7 +29,7 @@ initStore([
         description:
             'Lead your favorite team to victory with enhanced player control, ultra-realistic stadiums, and fully licensed tournaments.',
         price: 72.40,
-        image: 'images/products/fifa24.jpg',
+        image: 'images/products/service-4.jpg',
     },
     {
         id: 5,
@@ -37,7 +37,7 @@ initStore([
         description:
             'Soar through floating islands and uncover ancient legends in this beautifully crafted open-world fantasy epic.',
         price: 81.90,
-        image: 'images/products/zelda-totk.jpg',
+        image: 'images/products/service-5.jpg',
     },
     {
         id: 6,
@@ -45,6 +45,6 @@ initStore([
         description:
             'Command elite units in cinematic campaigns and competitive battles with advanced weapons and tactical depth.',
         price: 105.00,
-        image: 'images/products/cod-mw3.jpg',
+        image: 'images/products/service-6.jpg',
     },
 ]);
